@@ -115,9 +115,21 @@ public final class AbilityBudget {
      * @param mode  The difficulty mode
      * @return BudgetData with allocated budgets for each category
      */
+    /**
+     * Safely read maxEliteLevel from config. Returns 1500 (default) if config
+     * is not loaded yet (e.g. during unit tests).
+     */
+    private static int getMaxEliteLevelSafe() {
+        try {
+            return com.eliteforge.config.EliteForgeConfig.COMMON.maxEliteLevel.get();
+        } catch (Exception e) {
+            return 1500; // default value matching the config definition
+        }
+    }
+
     public static BudgetData calculateBudgets(int level, DifficultyMode mode) {
         // Scale level from 1-1500 to internal tier 1-10 for budget calculation
-        int maxLevel = com.eliteforge.config.EliteForgeConfig.COMMON.maxEliteLevel.get();
+        int maxLevel = getMaxEliteLevelSafe();
         int tier = Math.max(1, Math.min(10, (int)Math.ceil(level * 10.0 / maxLevel)));
         if (tier < 1) tier = 1;
         // Use tier for budget calculation instead of raw level
@@ -167,7 +179,7 @@ public final class AbilityBudget {
     public static int getMaxAbilities(int level, DifficultyMode mode) {
         int base = mode.getMaxAbilitiesBase();
         // Scale level to internal tier (1-10) so ability counts don't explode at high levels.
-        int maxLevel = com.eliteforge.config.EliteForgeConfig.COMMON.maxEliteLevel.get();
+        int maxLevel = getMaxEliteLevelSafe();
         int tier = Math.max(1, Math.min(10, (int)Math.ceil(level * 10.0 / maxLevel)));
         // Add one ability per 2 levels in FORGE, per 3 levels in MIXED, per 4 levels in CASUAL
         int extra = switch (mode) {
@@ -231,7 +243,7 @@ public final class AbilityBudget {
      */
     public static boolean allowsCreatorAbilities(DifficultyMode mode, int level) {
         // Creator abilities require tier >= 5 (i.e. level in the top half of the 1-10 tier scale).
-        int maxLevel = com.eliteforge.config.EliteForgeConfig.COMMON.maxEliteLevel.get();
+        int maxLevel = getMaxEliteLevelSafe();
         int tier = Math.max(1, Math.min(10, (int)Math.ceil(level * 10.0 / maxLevel)));
         return mode != DifficultyMode.CASUAL && tier >= 5;
     }
