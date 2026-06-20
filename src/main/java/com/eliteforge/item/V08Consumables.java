@@ -48,7 +48,7 @@ public class V08Consumables {
             ItemStack stack = player.getItemInHand(hand);
             if (level.isClientSide) return InteractionResultHolder.success(stack);
             player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 3));
-            player.addEffect(new MobEffectInstance(MobEffects.SLOW, 200, 0));
+            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 0));
             if (!player.getAbilities().instabuild) stack.shrink(1);
             return InteractionResultHolder.consume(stack);
         }

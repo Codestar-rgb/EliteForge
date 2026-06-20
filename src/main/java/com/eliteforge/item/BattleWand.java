@@ -19,7 +19,7 @@ public class BattleWand extends Item {
         if (player.getCooldowns().isOnCooldown(this)) return InteractionResultHolder.pass(stack);
         player.getCooldowns().addCooldown(this, 40);
         if (level instanceof ServerLevel sl) {
-            var snowball = net.minecraft.world.entity.projectile.Snowball(level, player);
+            var snowball = new net.minecraft.world.entity.projectile.Snowball(level, player);
             snowball.shootFromRotation(player, player.getXRot(), player.getYRot(), 0, 2.0f, 1.0f);
             snowball.setDeltaMovement(snowball.getDeltaMovement().scale(2.0));
             sl.addFreshEntity(snowball);
