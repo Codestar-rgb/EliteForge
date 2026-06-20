@@ -1,0 +1,33 @@
+{
+  "entity": "minecraft:wither_skeleton",
+  "baseLevel": 2,
+  "maxLevel": 5,
+  "abilityWeights": {
+    "eliteforge:wither": 2.5,
+    "eliteforge:spirit_burn": 1.5,
+    "eliteforge:rage": 2.0,
+    "eliteforge:death_touch": 1.2,
+    "eliteforge:iron_wall": 1.8,
+    "eliteforge:armor": 1.5,
+    "eliteforge:thorns": 1.3,
+    "eliteforge:shield": 1.0,
+    "eliteforge:fear": 2.0,
+    "eliteforge:slow": 1.5,
+    "eliteforge:curse": 1.8,
+    "eliteforge:berserk": 1.0,
+    "eliteforge:doom": 0.8
+  },
+  "abilityBlacklist": [
+    "eliteforge:arrow_rain",
+    "eliteforge:web",
+    "eliteforge:freeze"
+  ],
+  "budgetOverrides": {
+    "attack": 4.5,
+    "defense": 3.0,
+    "control": 2.0,
+    "legendary": 1.2
+  },
+  "spawnChanceOverride": 0.18,
+  "forcedAbilities": {}
+}

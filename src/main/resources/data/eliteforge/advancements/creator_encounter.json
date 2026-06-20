@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "eliteforge:creator_fragment"
+    },
+    "title": {
+      "translate": "advancements.eliteforge.creator_encounter.title"
+    },
+    "description": {
+      "translate": "advancements.eliteforge.creator_encounter.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "eliteforge:first_elite_kill",
+  "criteria": {
+    "encountered_creator": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

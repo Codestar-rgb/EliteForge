@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+build/
+out/
+run/
+run-data/
+mcmodsrepo/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+eclipse/
+.metadata/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Forge
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Generated resources
+src/generated/
+
+# Misc
+*.bak
+*.tmp

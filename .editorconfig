@@ -1,0 +1,52 @@
+# EditorConfig — https://editorconfig.org
+# EliteForge uses 4-space indentation (Java/Forge convention) and UTF-8.
+# IntelliJ IDEA, Eclipse, VS Code, and GitHub all support this out of the box.
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+[*.{java,gradle}]
+indent_size = 4
+
+# Gradle's Groovy DSL also uses 4 spaces
+[*.gradle]
+indent_size = 4
+
+# Properties (gradle.properties, mods.toml is TOML not properties)
+[*.properties]
+indent_style = space
+indent_size = 2
+
+# TOML (mods.toml, pack.mcmeta is JSON)
+[*.toml]
+indent_style = space
+indent_size = 2
+
+# JSON (lang files, pack.mcmeta, entity_presets)
+[*.json]
+indent_style = space
+indent_size = 2
+
+# Markdown — preserve trailing whitespace (two trailing spaces = line break)
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
+
+# YAML (CI workflows, if any)
+[*.{yml,yaml}]
+indent_size = 2
+
+# Shell scripts
+[*.sh]
+indent_size = 4
+
+# Makefile — must use tabs
+[Makefile]
+indent_style = tab

@@ -1,0 +1,35 @@
+{
+  "entity": "minecraft:blaze",
+  "baseLevel": 2,
+  "maxLevel": 5,
+  "abilityWeights": {
+    "eliteforge:lightning": 2.5,
+    "eliteforge:storm": 2.0,
+    "eliteforge:explosion": 1.8,
+    "eliteforge:wither": 1.2,
+    "eliteforge:knockback": 1.5,
+    "eliteforge:fear": 1.3,
+    "eliteforge:confusion": 1.0,
+    "eliteforge:rage": 1.2,
+    "eliteforge:shield": 1.0,
+    "eliteforge:evade": 1.2,
+    "eliteforge:spirit_burn": 1.5,
+    "eliteforge:regen": 0.8,
+    "eliteforge:thorns": 0.9
+  },
+  "abilityBlacklist": [
+    "eliteforge:fire",
+    "eliteforge:poison",
+    "eliteforge:freeze",
+    "eliteforge:web",
+    "eliteforge:corrosion"
+  ],
+  "budgetOverrides": {
+    "attack": 4.5,
+    "defense": 2.0,
+    "control": 2.0,
+    "legendary": 1.0
+  },
+  "spawnChanceOverride": 0.15,
+  "forcedAbilities": {}
+}

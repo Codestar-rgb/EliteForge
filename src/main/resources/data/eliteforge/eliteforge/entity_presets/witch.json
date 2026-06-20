@@ -1,0 +1,35 @@
+{
+  "entity": "minecraft:witch",
+  "baseLevel": 2,
+  "maxLevel": 5,
+  "abilityWeights": {
+    "eliteforge:curse": 2.5,
+    "eliteforge:confusion": 2.0,
+    "eliteforge:blind": 1.8,
+    "eliteforge:slow": 1.5,
+    "eliteforge:necromancy": 1.3,
+    "eliteforge:mutation": 1.5,
+    "eliteforge:siphon": 1.2,
+    "eliteforge:doom": 1.0,
+    "eliteforge:time_warp": 1.2,
+    "eliteforge:chaos": 1.0,
+    "eliteforge:wither": 1.3,
+    "eliteforge:spirit_burn": 0.9,
+    "eliteforge:gravity": 0.8,
+    "eliteforge:fear": 0.7
+  },
+  "abilityBlacklist": [
+    "eliteforge:poison",
+    "eliteforge:corrosion",
+    "eliteforge:explosion",
+    "eliteforge:berserk"
+  ],
+  "budgetOverrides": {
+    "attack": 2.0,
+    "defense": 2.0,
+    "control": 5.0,
+    "legendary": 1.5
+  },
+  "spawnChanceOverride": 0.13,
+  "forcedAbilities": {}
+}

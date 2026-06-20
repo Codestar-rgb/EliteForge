@@ -1,0 +1,38 @@
+{
+  "entity": "minecraft:enderman",
+  "baseLevel": 3,
+  "maxLevel": 6,
+  "abilityWeights": {
+    "eliteforge:phase": 2.5,
+    "eliteforge:phase_shift": 2.0,
+    "eliteforge:void": 2.0,
+    "eliteforge:fear": 1.5,
+    "eliteforge:confusion": 1.3,
+    "eliteforge:blind": 1.2,
+    "eliteforge:wither": 1.5,
+    "eliteforge:siphon": 1.0,
+    "eliteforge:doom": 1.2,
+    "eliteforge:time_warp": 1.0,
+    "eliteforge:evade": 1.8,
+    "eliteforge:reflect": 1.2,
+    "eliteforge:curse": 0.9,
+    "eliteforge:chaos": 0.7
+  },
+  "abilityBlacklist": [
+    "eliteforge:web",
+    "eliteforge:immobilize",
+    "eliteforge:freeze",
+    "eliteforge:gravity",
+    "eliteforge:fire"
+  ],
+  "budgetOverrides": {
+    "attack": 3.0,
+    "defense": 2.5,
+    "control": 3.0,
+    "legendary": 1.5
+  },
+  "spawnChanceOverride": 0.12,
+  "forcedAbilities": {
+    "eliteforge:phase_shift": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "active=false,suppression_mode=0": {
+      "model": "eliteforge:block/elite_beacon"
+    },
+    "active=false,suppression_mode=1": {
+      "model": "eliteforge:block/elite_beacon"
+    },
+    "active=false,suppression_mode=2": {
+      "model": "eliteforge:block/elite_beacon"
+    },
+    "active=true,suppression_mode=0": {
+      "model": "eliteforge:block/elite_beacon"
+    },
+    "active=true,suppression_mode=1": {
+      "model": "eliteforge:block/elite_beacon"
+    },
+    "active=true,suppression_mode=2": {
+      "model": "eliteforge:block/elite_beacon"
+    }
+  }
+}

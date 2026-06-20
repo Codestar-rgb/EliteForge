@@ -1,0 +1,32 @@
+{
+  "entity": "minecraft:pillager",
+  "baseLevel": 1,
+  "maxLevel": 5,
+  "abilityWeights": {
+    "eliteforge:arrow_rain": 2.0,
+    "eliteforge:lightning": 1.2,
+    "eliteforge:sweep": 1.8,
+    "eliteforge:rage": 1.5,
+    "eliteforge:knockback": 2.0,
+    "eliteforge:armor": 1.5,
+    "eliteforge:iron_wall": 1.2,
+    "eliteforge:evade": 1.0,
+    "eliteforge:blind": 1.5,
+    "eliteforge:fear": 1.2,
+    "eliteforge:commander_squad": 0.5,
+    "eliteforge:berserk": 0.8
+  },
+  "abilityBlacklist": [
+    "eliteforge:web",
+    "eliteforge:freeze",
+    "eliteforge:void"
+  ],
+  "budgetOverrides": {
+    "attack": 4.0,
+    "defense": 2.5,
+    "control": 2.5,
+    "legendary": 0.8
+  },
+  "spawnChanceOverride": 0.16,
+  "forcedAbilities": {}
+}

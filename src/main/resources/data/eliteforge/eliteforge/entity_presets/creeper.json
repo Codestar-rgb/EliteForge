@@ -1,0 +1,36 @@
+{
+  "entity": "minecraft:creeper",
+  "baseLevel": 2,
+  "maxLevel": 5,
+  "abilityWeights": {
+    "eliteforge:explosion": 3.0,
+    "eliteforge:fire": 2.0,
+    "eliteforge:lightning": 2.0,
+    "eliteforge:rage": 1.5,
+    "eliteforge:iron_wall": 1.0,
+    "eliteforge:shield": 1.2,
+    "eliteforge:evade": 1.0,
+    "eliteforge:knockback": 1.5,
+    "eliteforge:fear": 1.0,
+    "eliteforge:gravity": 0.8,
+    "eliteforge:confusion": 0.7,
+    "eliteforge:storm": 1.0,
+    "eliteforge:chaos": 0.5,
+    "eliteforge:doom": 0.3
+  },
+  "abilityBlacklist": [
+    "eliteforge:web",
+    "eliteforge:freeze",
+    "eliteforge:necromancy"
+  ],
+  "budgetOverrides": {
+    "attack": 5.0,
+    "defense": 1.5,
+    "control": 1.5,
+    "legendary": 1.0
+  },
+  "spawnChanceOverride": 0.1,
+  "forcedAbilities": {
+    "eliteforge:explosion": 1
+  }
+}

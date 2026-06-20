@@ -1,0 +1,32 @@
+{
+  "entity": "minecraft:phantom",
+  "baseLevel": 2,
+  "maxLevel": 5,
+  "abilityWeights": {
+    "eliteforge:lightning": 1.5,
+    "eliteforge:spirit_burn": 1.8,
+    "eliteforge:storm": 1.2,
+    "eliteforge:evade": 2.0,
+    "eliteforge:phase": 1.5,
+    "eliteforge:reflect": 1.0,
+    "eliteforge:gravity": 2.0,
+    "eliteforge:knockback": 1.5,
+    "eliteforge:blind": 1.8,
+    "eliteforge:confusion": 1.2,
+    "eliteforge:phase_shift": 0.8,
+    "eliteforge:time_warp": 0.6
+  },
+  "abilityBlacklist": [
+    "eliteforge:iron_wall",
+    "eliteforge:web",
+    "eliteforge:poison"
+  ],
+  "budgetOverrides": {
+    "attack": 3.5,
+    "defense": 2.0,
+    "control": 3.5,
+    "legendary": 1.0
+  },
+  "spawnChanceOverride": 0.14,
+  "forcedAbilities": {}
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "eliteforge:evolution_core"
+    },
+    "title": {
+      "translate": "advancements.eliteforge.awakening.title"
+    },
+    "description": {
+      "translate": "advancements.eliteforge.awakening.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "eliteforge:creator_encounter",
+  "criteria": {
+    "witnessed_awakening": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

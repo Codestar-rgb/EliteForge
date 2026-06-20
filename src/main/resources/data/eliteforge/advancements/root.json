@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "eliteforge:elite_name_tag"
+    },
+    "title": {
+      "translate": "advancements.eliteforge.root.title"
+    },
+    "description": {
+      "translate": "advancements.eliteforge.root.description"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "got_elite_name_tag": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["eliteforge:elite_name_tag"]
+          }
+        ]
+      }
+    }
+  }
+}

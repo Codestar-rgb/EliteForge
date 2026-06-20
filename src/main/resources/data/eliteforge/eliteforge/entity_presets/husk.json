@@ -1,0 +1,32 @@
+{
+  "entity": "minecraft:husk",
+  "baseLevel": 1,
+  "maxLevel": 5,
+  "abilityWeights": {
+    "eliteforge:poison": 1.5,
+    "eliteforge:wither": 1.8,
+    "eliteforge:hunger": 0.0,
+    "eliteforge:slow": 1.8,
+    "eliteforge:rage": 1.5,
+    "eliteforge:iron_wall": 1.5,
+    "eliteforge:armor": 1.8,
+    "eliteforge:thorns": 1.2,
+    "eliteforge:regen": 1.0,
+    "eliteforge:knockback": 1.5,
+    "eliteforge:fear": 1.2,
+    "eliteforge:berserk": 0.8
+  },
+  "abilityBlacklist": [
+    "eliteforge:freeze",
+    "eliteforge:web",
+    "eliteforge:void"
+  ],
+  "budgetOverrides": {
+    "attack": 3.5,
+    "defense": 3.5,
+    "control": 2.0,
+    "legendary": 0.6
+  },
+  "spawnChanceOverride": 0.15,
+  "forcedAbilities": {}
+}

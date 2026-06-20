@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "active=false,difficulty=1": {
+      "model": "eliteforge:block/elite_spawner"
+    },
+    "active=false,difficulty=2": {
+      "model": "eliteforge:block/elite_spawner"
+    },
+    "active=false,difficulty=3": {
+      "model": "eliteforge:block/elite_spawner"
+    },
+    "active=false,difficulty=4": {
+      "model": "eliteforge:block/elite_spawner"
+    },
+    "active=false,difficulty=5": {
+      "model": "eliteforge:block/elite_spawner"
+    },
+    "active=true,difficulty=1": {
+      "model": "eliteforge:block/elite_spawner"
+    },
+    "active=true,difficulty=2": {
+      "model": "eliteforge:block/elite_spawner"
+    },
+    "active=true,difficulty=3": {
+      "model": "eliteforge:block/elite_spawner"
+    },
+    "active=true,difficulty=4": {
+      "model": "eliteforge:block/elite_spawner"
+    },
+    "active=true,difficulty=5": {
+      "model": "eliteforge:block/elite_spawner"
+    }
+  }
+}

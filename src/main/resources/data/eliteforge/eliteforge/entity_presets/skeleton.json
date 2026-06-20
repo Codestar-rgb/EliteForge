@@ -1,0 +1,33 @@
+{
+  "entity": "minecraft:skeleton",
+  "baseLevel": 1,
+  "maxLevel": 5,
+  "abilityWeights": {
+    "eliteforge:arrow_rain": 2.5,
+    "eliteforge:lightning": 1.0,
+    "eliteforge:spirit_burn": 1.2,
+    "eliteforge:wither": 1.5,
+    "eliteforge:evade": 1.5,
+    "eliteforge:phase": 1.0,
+    "eliteforge:reflect": 1.3,
+    "eliteforge:immunity": 0.8,
+    "eliteforge:blind": 1.0,
+    "eliteforge:curse": 0.9,
+    "eliteforge:siphon": 0.7,
+    "eliteforge:phase_shift": 0.6,
+    "eliteforge:time_warp": 0.5
+  },
+  "abilityBlacklist": [
+    "eliteforge:web",
+    "eliteforge:berserk",
+    "eliteforge:clone"
+  ],
+  "budgetOverrides": {
+    "attack": 3.5,
+    "defense": 2.5,
+    "control": 2.0,
+    "legendary": 0.8
+  },
+  "spawnChanceOverride": 0.15,
+  "forcedAbilities": {}
+}

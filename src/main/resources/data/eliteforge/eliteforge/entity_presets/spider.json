@@ -1,0 +1,36 @@
+{
+  "entity": "minecraft:spider",
+  "baseLevel": 1,
+  "maxLevel": 4,
+  "abilityWeights": {
+    "eliteforge:poison": 2.5,
+    "eliteforge:web": 2.0,
+    "eliteforge:slow": 1.5,
+    "eliteforge:knockback": 1.2,
+    "eliteforge:gravity": 0.8,
+    "eliteforge:bloodthirst": 1.3,
+    "eliteforge:rage": 1.0,
+    "eliteforge:evade": 1.8,
+    "eliteforge:phase": 0.9,
+    "eliteforge:regen": 1.0,
+    "eliteforge:thorns": 0.7,
+    "eliteforge:curse": 0.6,
+    "eliteforge:fear": 0.8
+  },
+  "abilityBlacklist": [
+    "eliteforge:fire",
+    "eliteforge:explosion",
+    "eliteforge:arrow_rain",
+    "eliteforge:lightning"
+  ],
+  "budgetOverrides": {
+    "attack": 3.0,
+    "defense": 2.0,
+    "control": 3.5,
+    "legendary": 0.6
+  },
+  "spawnChanceOverride": 0.18,
+  "forcedAbilities": {
+    "eliteforge:web": 1
+  }
+}

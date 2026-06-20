@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "eliteforge:elite_name_tag"
+    },
+    "title": {
+      "translate": "advancements.eliteforge.first_elite_kill.title"
+    },
+    "description": {
+      "translate": "advancements.eliteforge.first_elite_kill.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "eliteforge:root",
+  "criteria": {
+    "killed_elite": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{ForgeCaps:{\"eliteforge:elite_data\":{EliteData:{IsElite:1b}}}}"
+        }
+      }
+    }
+  }
+}
